@@ -1,0 +1,198 @@
+<!Doctype html>
+<meta charset="UTF-8">
+<html>
+<head>
+<title>Log In/Sign Up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up as Animal Shelter</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CTstyling2.css">
+        <script src="https://kit.fontawesome.com/11cacb9a37.js" crossorigin="anonymous"></script>
+<style>
+.form-control {
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 12px;
+  color: #FFFFFF;
+  }
+  
+.form-group{
+  color: #CCCCCC
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 16px;
+  width: 50%;
+  }
+  
+.form-check {
+  color: #CCCCCC
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 16px;
+  width: 50%;
+  }
+  
+.dropbtn {
+  background-color: #4682B4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.bg1 { 
+    background-color: #008ECC;
+	}
+	
+.bg2 { 
+    background-color: #4682B4;
+	}
+	
+.bg3 { 
+    background-color: #14A098;
+	}
+</style>
+</head>
+<body style="margin: 5% 5% 10% 5%;">
+<!--NavBar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">CATinder</a>
+            </div>
+            <div class="nav navbar-nav">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Register as a Shelter</a></li>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+<form action="/action_page.php">
+<fieldset>
+<legend>Log In:</legend>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control bg1" id="email">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control bg1" id="pwd">
+  </div>
+  <br>
+  <div class="form-check">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-default" style="background-color: #B0DFE5; font-family: Verdana; font-weight: bold; font-size: 16px;">Submit</button>
+  <br><br>
+  Don't have an account yet? <br>
+  <a href="#SignUp">Sign Up!</a>
+</fieldset>
+<br>
+<fieldset id="SignUp">
+<legend id="main" style= "font-weight: bold; font-size: 18px">Sign Up:</legend>
+<br>
+<fieldset>
+<legend id="sub">Personal Information:</legend>
+  <div class="form-group">
+    <label for="fname">First Name:</label>
+    <input type="text" class="form-control bg2" id="fname">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="lname">Last Name:</label>
+    <input type="text" class="form-control bg2" id="lname">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control bg2" id="email">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="phone">Contact Number:</label>
+    <input type="text" class="form-control bg2" id="phone">
+  </div>
+  <br>
+  <div class="dropdown">
+    <label for="dropbtn">Location:<br>
+    <button class="dropbtn">Choose your Location</button>
+    <div class="dropdown-content">
+      <a href="#">India</a>
+      <a href="#">USA</a>
+      <a href="#">UK</a>
+    </div>
+  </div>
+</fieldset>
+<br>
+<fieldset>
+<legend id="sub">Sign Up Information:</legend>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control bg3" id="pwd">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="pwd">Re-type Password:</label>
+    <input type="password" class="form-control bg3" id="rpwd">
+  </div>
+  <br>
+  <div class="form-check">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <br>
+  <div class="form-check">
+    <label><input type="checkbox"> Agree to Terms and Conditions</label>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-default" style="background-color: #B0DFE5; font-family: Verdana; font-weight: bold; font-size: 16px;"><a href=" ">Submit</a></button>
+</fieldset>
+</fieldset>
+</form>
+</div>
+<!--Footer-->
+  <footer class="foot">
+   <hr class="hori">
+   <a class="fab fa-facebook iconm" href="#"></a>
+   <a class="fab fa-twitter icon" href="#"></a>
+   <a class="fab fa-snapchat icon" href="#"></a>
+   <a class="fab fa-instagram icon" href="#"></a>
+   <a class="fab fa-linkedin-in icon" href="#"></a>
+   <br>
+   <h4 style="text-align:center;color:#333">Copyright &copy; Team Teem 2020</h4>
+  </footer> 
+</body>
+</html>
